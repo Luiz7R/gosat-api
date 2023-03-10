@@ -1,7 +1,7 @@
 {
     "version": 2,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.4.0" }
+        "api/index.php": { "runtime": "vercel-php@0.3.1" }
     },
     "routes": [{
         "src": "/(.*)",
@@ -9,8 +9,8 @@
     }],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "https://gosat-api-lz7.com",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://yourproductionurl.com",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",

@@ -36,9 +36,11 @@ php artisan serve
 
 Após o servidor estiver rodando, já pode fazer as requisições usando o arquivo disponibilizado do postman:
 
-<a href="#">Rotas</a>
+<a href="https://documenter.getpostman.com/view/12724363/2s93JtP3UJ">Endpoints</a>
 
-Já tem as opções para os três cpfs:
+e o Arquivo também está no repositório.
+
+Já tem as opções para os três CPFs:
 
 ```
 111.111.111.11

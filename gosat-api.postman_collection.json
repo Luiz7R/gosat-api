@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "c863126f-b19f-491f-ad5d-ef0defa25152",
+		"name": "gosat-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta Oferta de Credito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": 11111111111,\r\n    \"valorSolicitado\": 3000,\r\n    \"quantidadeParcelas\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/consultaOferta",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultaOferta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Oferta de Credito 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"222.222.22-22\",\r\n    \"valorSolicitado\": 3000,\r\n    \"quantidadeParcelas\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/consultaOferta",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultaOferta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Oferta de Credito 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"22222222222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.gosat.org/api/v1/simulacao/oferta",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"gosat",
+						"org"
+					],
+					"path": [
+						"api",
+						"v1",
+						"simulacao",
+						"oferta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
